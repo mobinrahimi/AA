@@ -21,7 +21,7 @@ public class Pin : MonoBehaviour
         }
         else if (collision.CompareTag("Pin"))
         {
-            Time.timeScale = 0;
+            GameManager.instace.loseGame();
         }
     }
 }
