@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
     
     public void loseGame()
     {
-
         pinSpawner.enabled = false;
         bigCircle.enabled = false;
         for (int i = 0; i < pins.Count; i++)
@@ -31,5 +30,15 @@ public class GameManager : MonoBehaviour
             pins[i].enabled = false;
         }
         animator.SetTrigger("GameOver");
+    }
+    public void winGame()
+    {
+        pinSpawner.enabled = false;
+        bigCircle.enabled = false;
+        for (int i = 0; i < pins.Count; i++)
+        {
+            pins[i].enabled = false;
+        }
+        animator.SetTrigger("WinGame");
     }
 }

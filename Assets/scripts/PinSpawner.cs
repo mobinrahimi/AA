@@ -19,10 +19,12 @@ public class PinSpawner : MonoBehaviour
             {
                 GameObject pin = Instantiate(pinPrefab, transform.position, transform.rotation);
                 GameManager.instace.pins.Add(pin.GetComponent<Pin>());
+
             }
-            if(_pinsToShoot < _shootedPin)
+            if (_pinsToShoot <= _shootedPin )
             {
                 GameManager.instace.finished = true;
+                GameManager.instace.winGame();
             }
 
         }

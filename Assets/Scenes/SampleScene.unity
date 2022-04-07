@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537c0e6bc39ee2f4ebf86b79cbc3927c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totallPins: 20
+  totallPins: 10
   finished: 0
   pins: []
   animator: {fileID: 519420030}
