@@ -28,7 +28,10 @@ public class Pin : MonoBehaviour
             _isArived = true;
             transform.SetParent(collision.transform);
             collision.GetComponent<BigCircle>().UpdateText();
-
+            if (GameManager.instace.finished)
+            {
+                GameManager.instace.winGame();
+            }
             
         }
         else if (collision.CompareTag("Pin"))
